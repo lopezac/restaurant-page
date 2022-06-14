@@ -1,4 +1,5 @@
-import EmpanadasImg from './empanadas.jpg'
+import EmpanadasImg from './empanadas.jpg';
+// import styles
 
 export default function createHome() {
     const title = document.createElement("h1");
@@ -14,6 +15,12 @@ export default function createHome() {
     para.classList.add("home-description");
     para.textContent = "Nothing better than the rich gastronomy from Argentina, ranging from it's empanadas, the famous mate, a delicious locro, an asado, some milanesas, choripanes, pizzas, dulce de leche, medialunas, alfajores";
 
+    const home = document.createElement("div");
+    home.classList.add("home");
+    home.append(title, img, para);
+
     const content = document.querySelector("#content");
-    content.append(title, img, para);
+    content.append(home);
+
+    // Apply styles to content
 }

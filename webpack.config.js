@@ -7,6 +7,7 @@ module.exports = {
         filename: 'main.js',
         // clean: true,
     },
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {

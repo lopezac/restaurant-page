@@ -1,0 +1,34 @@
+{
+    "articles": [
+        {
+            "title" : "Empanadas",
+            "imgUrl" : "empanadas-2.jpg",
+            "info" : "An empanada is a half-moon shaped pastry, made from dough and usually stuffed with savoury fillings."
+        },
+        {
+            "title" : "Asado",
+            "imgUrl" : "asado.jpg",
+            "info" : "An asado is a common gathering of family and friends where typical Argentine meats are cooked just so."
+        },
+        {
+            "title" : "Locro",
+            "imgUrl" : "locro.jpg",
+            "info" : "Locro is the traditional dish that we eat on Argentinian national holidays. It’s a stew with a base made of calabaza—or acorn or butternut squash, corn and porotos, or beans."
+        },
+        {
+            "title" : "Choripan",
+            "imgUrl" : "choripan.jpg",
+            "info" : "Choripán is the ultimate in Argentine street food, a sandwich consisting of a chorizo sausage and a variety of condiments in a crusty bun. It is usually consumed on the go, since it is mostly sold at street stands throughout Latin America."
+        },
+        {
+            "title" : "Pizza",
+            "imgUrl" : "pizza.jpg",
+            "info" : "Argentine pizza has evolved over around 120 years to become the dish it is today. The first pizza bars were opened in the 19th century by immigrants from Naples and Genoa."
+        },
+        {
+            "title" : "Yerba Mate",
+            "imgUrl" : "yerba-mate.jpg",
+            "info" : "Mate is an extremely popular beverage in Argentina. Made from a bitter herb, called yerba mate, the drink has an extensive history and a wealth of rituals and customs surrounding its consumption."
+        }
+    ]
+}

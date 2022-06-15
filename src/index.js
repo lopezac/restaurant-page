@@ -1,6 +1,7 @@
 import "./style_index.css";
 import createHome from "./home/home.js";
-import createMenu from "./menu/articles.js"
+import createMenu from "./menu/articles.js";
+import createContact from "./contact/contact.js";
 
 createHome();
 
@@ -29,7 +30,7 @@ const options = (() => {
     const doBtnAction = btn => {
         if (btn.classList.contains("home-btn")) createHome();
         else if (btn.classList.contains("menu-btn")) createMenu();
-        // else if (btn.classList.contains("contact-btn")) createContact();
+        else if (btn.classList.contains("contact-btn")) createContact();
     }
 
     return {changePagesTab};

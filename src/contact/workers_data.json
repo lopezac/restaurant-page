@@ -1,0 +1,32 @@
+{
+    "workers": [
+        {
+            "name" : "Marcelo Pereyra",
+            "phoneNum" : "011225757",
+            "email" : "marcelopereyra@email.com",
+            "role" : "Owner",
+            "imgUrl" : "person1.jpg"
+        },
+        {
+            "name" : "Juan Godin",
+            "phoneNum" : "076427645",
+            "email" : "juangodin@email.com",
+            "role" : "Main Chef",
+            "imgUrl" : "person2.png"
+        },
+        {
+            "name" : "Tomas Camacho",
+            "phoneNum" : "015667771",
+            "email" : "tomascamacho@email.com",
+            "role" : "Chef",
+            "imgUrl" : "person3.jpg"
+        },
+        {
+            "name" : "Ambrosio Brites",
+            "phoneNum" : "0196424622",
+            "email" : "ambrosiobrites@email.com",
+            "role" : "Chef",
+            "imgUrl" : "person4.png"
+        }
+    ]
+}

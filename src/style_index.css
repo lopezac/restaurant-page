@@ -2,12 +2,117 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    column-gap: 30px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
 #content {
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex: 1;
 }
 
-.home-img {
+#content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* min-width: 500px;
+    max-width: 700px; */
+}
 
+#content > .home {
+    display: grid;
+    grid-template-areas: "title title"
+                         "image info";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    column-gap: 20px;
+}
+
+#content > .home > .title {
+    grid-area: title;
+}
+
+#content > .home > .home-img {
+    grid-area: image;
+}
+
+#content > .home > .home-description {
+    grid-area: info;
+}
+
+#content > .articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 30px;
+    padding: 0 30px;
+}
+
+#content > .articles > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content > .contacts {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+}
+
+#content > .contacts > article {
+    display: flex;
+    column-gap: 10px;
+}
+
+.contacts > article > .contact-info {
+    
+}
+
+img {
+    /* For testing only */
+    width: 350px;
+    height: 350px;
+}
+
+footer {
+
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+footer .github-icon {
+    background-image: url("./GitHub-Mark-32px.png");
+    width: 32px;
+    height: 32px;
+    display: inline-block;
 }

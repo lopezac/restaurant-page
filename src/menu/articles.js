@@ -4,8 +4,11 @@ export default function createMenu() {
     const articles = document.createElement("div");
     articles.classList.add("articles");
 
+    const menuTitle = document.createElement("h2");
+    menuTitle.textContent = "The best argentinian foods";
+
     for (const aData of Data.articles) {
-        const title = document.createElement("h2");
+        const title = document.createElement("h3");
         title.textContent = aData.title;
         
         const info = document.createElement("p");
@@ -22,5 +25,5 @@ export default function createMenu() {
     }
 
     const content = document.querySelector("#content");
-    content.append(articles);
+    content.append(menuTitle, articles);
 }

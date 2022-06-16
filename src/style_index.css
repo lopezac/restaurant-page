@@ -13,6 +13,17 @@ body {
     min-height: 100%;
     padding: 0;
     margin: 0;
+    --yellow-color: #FDE047 /* #FACC15 */;
+    --sky-color: #0EA5E9;
+    --dark-sky-color: #0284C7;
+    --white-color: #F8FAFC;
+    --black-color: #18181B;
+}
+
+.top-navbar,
+footer {
+    background-color: var(--sky-color);
+    color: var(--white-color);
 }
 
 .navbar {
@@ -23,6 +34,14 @@ body {
 .navbar ul {
     display: flex;
     column-gap: 30px;
+    margin: 10px 0;
+}
+
+.navbar ul li,
+footer p {
+    background-color: var(--dark-sky-color);
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .navbar ul li {
@@ -31,30 +50,33 @@ body {
 
 #content {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex: 1;
-}
-
-#content > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* min-width: 500px;
-    max-width: 700px; */
+    color: #18181B;
 }
 
 #content > .home {
     display: grid;
     grid-template-areas: "title title"
                          "image info";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr;
     column-gap: 20px;
+    padding: 20px;
+    width: 720px;
+}
+
+#content > .home,
+#content > .articles > article {
+    background-color: var(--yellow-color);
+    border-radius: 5px;
 }
 
 #content > .home > .title {
     grid-area: title;
+    margin: 0 0 10px 0;
 }
 
 #content > .home > .home-img {
@@ -63,33 +85,60 @@ body {
 
 #content > .home > .home-description {
     grid-area: info;
+    margin: 0;
+    font-size: 2rem;
 }
 
 #content > .articles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    column-gap: 30px;
-    padding: 0 30px;
+    gap: 30px;
+    padding: 0 30px 30px 30px;
 }
 
 #content > .articles > article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--yellow-color);
+}
+
+.articles > article > p {
+    padding: 0 15px;
+}
+
+#content > h2 {
+    margin: 15px 0;
+    font-size: 1.8rem;
 }
 
 #content > .contacts {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 20px;
 }
 
 #content > .contacts > article {
     display: flex;
     column-gap: 10px;
+    background-color: var(--white-color);
+    border: var(--yellow-color) 10px solid;
+    border-radius: 5px;
 }
 
 .contacts > article > .contact-info {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.contacts img {
+    width: 200px;
+    height: 200px;
+    flex: 1;
 }
 
 img {
@@ -99,7 +148,8 @@ img {
 }
 
 footer {
-
+    display: flex;
+    justify-content: center;
 }
 
 footer p {

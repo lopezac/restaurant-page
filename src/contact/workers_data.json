@@ -12,7 +12,7 @@
             "phoneNum" : "076427645",
             "email" : "juangodin@email.com",
             "role" : "Main Chef",
-            "imgUrl" : "person2.png"
+            "imgUrl" : "person2.jpg"
         },
         {
             "name" : "Tomas Camacho",
@@ -26,7 +26,7 @@
             "phoneNum" : "0196424622",
             "email" : "ambrosiobrites@email.com",
             "role" : "Chef",
-            "imgUrl" : "person4.png"
+            "imgUrl" : "person4.jpg"
         }
     ]
 }

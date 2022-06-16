@@ -1,5 +1,4 @@
 import EmpanadasImg from './empanadas.jpg';
-// import styles
 
 export default function createHome() {
     const title = document.createElement("h1");
@@ -21,6 +20,4 @@ export default function createHome() {
 
     const content = document.querySelector("#content");
     content.append(home);
-
-    // Apply styles to content
 }
